@@ -42,18 +42,19 @@ class App extends Component {
       { symbol: '0', cols: 2, action: this.addToCurrent },
       { symbol: '.', cols: 1, action: this.addToCurrent },
       { symbol: '=', cols: 1, action: this.addToCurrent },
-      { symbol: '/', cols: 1, action: this.addToCurrent },
     ];
 
     return (
-      <div className="App" >
+      <div className="app">
         <h1>Calculator</h1>
         <input className="result" type="text" value={this.state.current} />
 
         {/* mapping the array */}
-        {buttons.map((btn, i) => {
-          return <Button key={i} symbol={btn.symbol} cols={btn.cols} action={(symbol) => btn.action(symbol)} />
-        })}
+        <div className="app__body">
+          {buttons.map((btn, i) => {
+            return <Button key={i} symbol={btn.symbol} cols={btn.cols} action={(symbol) => btn.action(symbol)} />
+          })}
+        </div>
 
       </div>
     )
