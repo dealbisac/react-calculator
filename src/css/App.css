@@ -7,6 +7,14 @@
   margin: 0px 30px;
 }
 
+.previous-value {
+  position: absolute;
+  right: 50px;
+  z-index: 99;
+  /* top: 10px; */
+  color: #aaa;
+}
+
 input.result {
   height: 100px;
   width: auto;
