@@ -47,6 +47,12 @@ class App extends Component {
     return (
       <div className="app">
         <h1>React Calculator</h1>
+        {this.state.previous.length > 0 ?
+          <div className="floaty-last">
+            {this.state.previous[this.previous.length - 1]}
+          </div>
+          : null
+        }
         <input className="result" type="text" value={this.state.current} />
 
         {/* mapping the array */}
