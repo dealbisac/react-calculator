@@ -18,6 +18,8 @@ class App extends Component {
   }
 
   addToCurrent = (symbol) => {
+    // console.log("symbol");
+
     this.setState({ current: this.state.current + symbol });
   }
 
@@ -50,7 +52,7 @@ class App extends Component {
 
         {/* mapping the array */}
         {buttons.map((btn, i) => {
-          return <Button symbol={btn.symbol} cols={btn.cols} action={(symbol) => btn.action} />
+          return <Button key={i} symbol={btn.symbol} cols={btn.cols} action={(symbol) => btn.action(symbol)} />
         })}
 
       </div>
