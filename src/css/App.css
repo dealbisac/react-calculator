@@ -1,5 +1,7 @@
 .app > h1 {
   text-align: center;
+  background-color: orange;
+  margin: 10px 30px;
 }
 
 .app__body {
@@ -17,7 +19,7 @@
 
 input.result {
   height: 100px;
-  width: auto;
+  width: 100%;
   /* border: 2px solid black; */
   border: none;
   text-align: right;
@@ -51,5 +53,5 @@ button.calc-button {
   background-color: #eee;
   font-size: 32px;
   color: #555;
-  outline-style: none;
+  /* outline-style: none; */
 }
