@@ -46,7 +46,7 @@ class App extends Component {
 
     return (
       <div className="app">
-        <h1>Calculator</h1>
+        <h1>React Calculator</h1>
         <input className="result" type="text" value={this.state.current} />
 
         {/* mapping the array */}
