@@ -37,8 +37,10 @@ class App extends Component {
 
   //Calculation Logic
   calculate = (symbol) => {
+    // eslint-disable-next-line
     let { current, previous, nextIsReset } = this.state;
     if (previous.length > 0) {
+      // eslint-disable-next-line
       current = eval(String(previous[previous.length - 1] + current));
       this.setState({ current, previous: [], nextIsReset: true });
     }
